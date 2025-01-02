@@ -1,0 +1,65 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Push to Origin MadhuDev",
+      "type": "shell",
+      "command": "git push origin MadhuDev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Push to Origin prabha",
+      "type": "shell",
+      "command": "git push origin prabha",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Push to Origin dev",
+      "type": "shell",
+      "command": "git push origin dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Push to Bitbucket MadhuDev",
+      "type": "shell",
+      "command": "git push bitbucket MadhuDev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Push to Bitbucket prabha",
+      "type": "shell",
+      "command": "git push bitbucket prabha",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Push to Bitbucket Dev",
+      "type": "shell",
+      "command": "git push bitbucket Dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Deploy to VM
+          script:
+            - echo "$PRIVATE_KEY" > ~/.ssh/bitbucket_private_key
+            - chmod 600 ~/.ssh/bitbucket_private_key
+            - echo "Host 192.168.10.70" >> ~/.ssh/config
+            - echo "  IdentityFile ~/.ssh/bitbucket_private_key" >> ~/.ssh/config
+            - echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+            - echo "  UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+            - cat ~/.ssh/config
+            - ssh -i ~/.ssh/bitbucket_private_key administrator@192.168.10.70 "echo 'SSH connection successful'"
+            - scp -r -i ~/.ssh/bitbucket_private_key . administrator@192.168.10.70:$PROJECT_PATH
