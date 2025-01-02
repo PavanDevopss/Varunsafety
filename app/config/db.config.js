@@ -31,10 +31,10 @@
 
 //VM DB Test Server
 module.exports = {
-  HOST: "192.168.10.69",
+  HOST: "localhost",
   USER: "postgres",
   PASSWORD: "123456",
-  DB: "VGITSDEV",
+  DB: "test",
   dialect: "postgres",
   port: 5432,
   pool: {
